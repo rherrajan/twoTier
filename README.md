@@ -2,7 +2,7 @@
 
 github account
 git add --all; git commit -m"."; git push -u origin master
-https://github.com/rherrajan/twoTier/tree/master
+https://github.com/rherrajan/twoTier
 
 netlify account
 build command: empty
