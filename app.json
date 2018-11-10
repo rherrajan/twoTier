@@ -1,0 +1,5 @@
+{
+  "name": "twoTier",
+  "description": "A archetype to build webapps with static and dynamic parts",
+  "addons": [ "heroku-postgresql" ]
+}
