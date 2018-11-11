@@ -159,6 +159,7 @@
             </goals>
             <configuration>
 	          <shortRevisionLength>6</shortRevisionLength>
+	          <revisionOnScmFailure>unavailable</revisionOnScmFailure>
 	          <doCheck>false</doCheck>
 	          <doUpdate>false</doUpdate>
 	        </configuration>
