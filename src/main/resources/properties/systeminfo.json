@@ -1,0 +1,6 @@
+{
+  "name": "@pom.name@",
+  "version": "@pom.version@",
+  "commit": "@buildNumber@",
+  "buildtime": "@buildtime@"
+}

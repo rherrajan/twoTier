@@ -1,11 +1,22 @@
 # twoTier
+=========
 
 **Description**
+----------------------------------------------------
 An archetype to build webapps with static and dynamic parts
 Including
 * ...
 
+**TODO**
+----------------------------------------------------
+* online symbol (with bootstrap)
+* add to homescreen feature
+* maven propertie replacement
+* version page
+
+
 **Accounts**
+----------------------------------------------------
 
 github account
 git add --all; git commit -m"."; git push -u origin master
@@ -19,4 +30,5 @@ https://two-tier.netlify.com/
 
 heroku account
 https://two-tier.herokuapp.com/
+mvn install; heroku local
 
