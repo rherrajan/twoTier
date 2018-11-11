@@ -1,7 +1,5 @@
 {
   "name": "@pom.name@",
   "version": "@pom.version@",
-  "buildtime": "@buildtime@",
-  "commit": "@buildNumber@",
-  "scmBranch": "@scmBranch@"  
+  "buildtime": "@buildtime@"
 }
