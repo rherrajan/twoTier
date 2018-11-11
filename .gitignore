@@ -2,3 +2,7 @@
 .settings/
 .project
 .classpath
+dist/
+node_modules/
+.npm
+.env

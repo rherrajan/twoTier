@@ -8,7 +8,7 @@
   "description": "An archetype to build webapps with static and dynamic parts",
   "icons": [
     {
-      "src":"images/favicon.png",
+      "src":"images/favicon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
