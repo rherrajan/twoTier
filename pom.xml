@@ -159,6 +159,8 @@
             </goals>
             <configuration>
 	          <shortRevisionLength>6</shortRevisionLength>
+	          <doCheck>false</doCheck>
+	          <doUpdate>false</doUpdate>
 	        </configuration>
           </execution>
           <execution>

@@ -31,4 +31,5 @@ https://two-tier.netlify.com/
 heroku account
 https://two-tier.herokuapp.com/
 mvn install; heroku local
+heroku logs --tail --app two-tier
 
