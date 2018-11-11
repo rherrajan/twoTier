@@ -1,5 +1,12 @@
 # twoTier
 
+**Description**
+An archetype to build webapps with static and dynamic parts
+Including
+* ...
+
+**Accounts**
+
 github account
 git add --all; git commit -m"."; git push -u origin master
 https://github.com/rherrajan/twoTier
