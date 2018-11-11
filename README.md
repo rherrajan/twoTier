@@ -1,18 +1,16 @@
-# twoTier
+twoTier
 =========
 
 **Description**
 ----------------------------------------------------
 An archetype to build webapps with static and dynamic parts
 Including
-* ...
+* systeminfo
 
 **TODO**
 ----------------------------------------------------
 * online symbol (with bootstrap)
 * add to homescreen feature
-* maven propertie replacement
-* version page
 
 
 **Accounts**
