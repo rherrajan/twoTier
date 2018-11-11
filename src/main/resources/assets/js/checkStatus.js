@@ -4,11 +4,13 @@ function checkStatus(){
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4) {
+			var statusElement = document.querySelector('#led-status');
 			if(this.status == 200){
-				document.querySelector('#analyzer-status').setAttribute('class', 'led-green');
+				statusElement.classList.add("led-green");
 			} else {
-				document.querySelector('#analyzer-status').setAttribute('class', 'led-red');
+				statusElement.classList.add("led-red");
 			}
+			statusElement.classList.remove("led-blue");
 		};
 	}
 
