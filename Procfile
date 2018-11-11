@@ -1,1 +1,1 @@
-web: java -jar target/twoTier-1.0.jar
+web: java -jar -Dserver.port=$PORT target/twoTier-1.0.jar
