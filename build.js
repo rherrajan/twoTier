@@ -26,11 +26,6 @@ metalsmith(__dirname)
     .clean(true)
     .use(drafts())
     .use(collections({
-        posts: {
-            pattern: 'posts/*.md',
-            sortBy: 'date',
-            reverse: true
-        },
         pages: {
             pattern: '*.md',
             sortBy: 'menu-order'
@@ -43,9 +38,6 @@ metalsmith(__dirname)
         directory: 'src/main/resources/layouts',
         default: 'default.hbs',
         partials: 'src/main/resources/layouts/partials'
-    }))
-    .use(sitemap({
-        hostname: "https://two-tier.netlify.com"
     }))
     .build(function (err) {
         if (err) throw err;
