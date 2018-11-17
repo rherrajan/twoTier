@@ -6,12 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "npm install",
-    "start": "node . && npm run postbuild",
-    "postbuild": "npm run copy-assets && npm run minify",
-    "copy-assets": "cp -r src/main/resources/assets dist/ && cp src/main/resources/public/manifest.json dist/ && cp src/main/resources/public/service-worker.js dist/",
-    "minify": "npm run minify:js && npm run minify:css",
-    "minify:js": "uglifyjs ./dist/assets/js/*.js -c -m -o ./dist/assets/js/script.min.js",
-    "minify:css": "cleancss --level 2 -o ./dist/assets/css/styles.min.css ./dist/assets/css/*.css && postcss ./dist/assets/css/styles.min.css --use autoprefixer -o ./dist/assets/css/styles.min.css"
+    "start": "node . && npm run copy-assets",
+    "copy-assets": "cp -r src/main/resources/assets dist/ && cp src/main/resources/public/manifest.json dist/ && cp src/main/resources/public/service-worker.js dist/"
   },
   "dependencies": {
     "autoprefixer": "^7.1.1",
@@ -25,10 +21,7 @@
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-navigation": "^0.2.9",
     "metalsmith-permalinks": "^0.5.0",
-    "metalsmith-sitemap": "^1.2.0",
-    "moment": "^2.18.1",
-    "postcss-cli": "^4.0.0",
-    "uglify-js": "^3.0.10"
+    "moment": "^2.18.1"
   },
   "devDependencies": {
     "grunt": "^1.0.3",

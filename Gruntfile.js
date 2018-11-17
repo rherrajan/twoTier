@@ -55,12 +55,33 @@ module.exports = function(grunt) {
 					    ],
 					},
 				},
+				uglify: {
+				  main: {
+					options: {
+					  mangle: false,
+					  beautify: true
+					},
+            		files: [{
+            		  src: "./dist/assets/js/*.js",
+            		  dest: "./dist/assets/js/script.min.js"
+            		}]
+				  }
+				},
+				css_clean: {
+				  options: {},
+		       	  files: {
+	            	src: "./dist/assets/css/*.css",
+	            	dest: "./dist/assets/css/styles.min.css"
+	              }
+				},
 				watch : {
 					scripts : {
 						files : [ 'src/**/*.hbs' ],
 						tasks : [
 							'metalsmith',
-							'copy'
+							'copy',
+							'uglify',
+							'css_clean'
 							],
 						options : {
 							spawn : false,
@@ -72,6 +93,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-metalsmith');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-css-clean');
+	
 	
 	grunt.registerTask('default', [ 'metalsmith' ]);
 }
