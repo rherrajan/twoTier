@@ -4,7 +4,6 @@ const markdown = require('metalsmith-markdown');
 const collections = require('metalsmith-collections');
 const permalinks = require('metalsmith-permalinks');
 const layouts = require('metalsmith-layouts');
-const sitemap = require('metalsmith-sitemap');
 const Handlebars = require('handlebars');
 const moment = require('moment');
 
