@@ -76,7 +76,7 @@ module.exports = function(grunt) {
 				},
 				watch : {
 					scripts : {
-						files : [ 'src/**/*.hbs' ],
+						files : [ 'src/**/*.hbs', 'src/**/*.css', 'src/**/*.js' ],
 						tasks : [
 							'metalsmith',
 							'copy',
