@@ -4,7 +4,7 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "Theme_color": "#207412",
+  "Theme_color": "#7e5c00",
   "description": "An archetype to build webapps with static and dynamic parts",
   "icons": [
     {
