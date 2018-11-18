@@ -7,6 +7,7 @@ function checkStatus(){
 			var statusElement = document.querySelector('#led-status');
 			if(this.status == 200){
 				statusElement.classList.add("led-green");
+				statusElement.title = xhttp.responseText;
 			} else {
 				statusElement.classList.add("led-red");
 			}
